@@ -13,4 +13,34 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font);
+  font-variation-settings: var(--main-font-text);
+  background-image: var(--bg-gradient);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  inline-size: var(--width-adaptive);
+  margin: 0 auto;
+  background-color: var(--bg-color);
+  border: 2px solid var(--bg-border-color);
+}
+
+.header_main-title {
+  font-family: var(--accent-font), fantasy;
+  font-weight: 400;
+  font-size: clamp(2.722rem, 4.9vw + 1.7rem, 3.611rem);
+}
+
+.header_title {
+  font-family: var(--accent-font), fantasy;
+  font-weight: 400;
+  font-size: clamp(0.778rem, 2.8vw + 0.194rem, 1.278rem);
 }
