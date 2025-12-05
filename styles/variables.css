@@ -19,7 +19,7 @@
       transparent 4px
     ),
     repeating-linear-gradient(to bottom, #e7e7e7, #1a1a1a);
-    --width-adaptive: clamp(20.833rem, 3.05vw + 14.5rem, 38.889rem);
-    --bg-color: #fff;
-    --bg-border-color: #000;
+  --width-adaptive: clamp(20.833rem, 30.52vw + 14.5rem, 38.889rem);
+  --bg-color: #fff;
+  --bg-border-color: #000;
 }
