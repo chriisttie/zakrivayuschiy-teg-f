@@ -38,6 +38,7 @@
   font-family: var(--accent-font), fantasy;
   font-weight: 400;
   font-size: clamp(2.722rem, 4.9vw + 1.7rem, 3.611rem);
+  text-transform: uppercase;
 }
 
 .header_title {
@@ -153,7 +154,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  gap: 12px;
+  gap: 7px;
 }
 
 .button {
@@ -212,8 +213,11 @@
 }
 
 .button:not(.button-heart):focus {
-  box-shadow: 2px 2px 0 var(--accent-color);
   outline: none;
+}
+
+.button:not(.button-heart):focus-visible {
+  box-shadow: 2px 2px 0 var(--accent-color);
   transition: box-shadow 0.3s ease;
 }
 
@@ -244,8 +248,7 @@
 
 .like-icon.is-liked .contour {
   fill: red;
-  transition-delay: 0.06s;
-  transition-duration: 0.3s;
+  transition: fill 0.3s linear 0.06s;
 }
 
 .main-body {
@@ -255,12 +258,17 @@
 
 .like-icon:hover .main-body {
   fill: var(--accent-color);
-  transition-delay: 0.05s;
+  transition: fill 0.3s linear 0.05s;
+}
+
+.like-icon:active .main-body {
+  fill: red;
+  transition: fill 0.3s linear 0.05s;
 }
 
 .like-icon.is-liked .main-body {
   fill: red;
-  transition-delay: 0s;
+  transition: fill 0.3s linear 0.05s;
 }
 
 .core {
@@ -270,12 +278,17 @@
 
 .like-icon:hover .core {
   fill: var(--accent-color);
-  transition-delay: 0s;
+  transition: fill 0.3s linear 0s;
+}
+
+.like-icon:active .core {
+  fill: red;
+  transition: fill 0.3s linear 0s;
 }
 
 .like-icon.is-liked .core {
   fill: red;
-  transition-delay: 0s;
+  transition: fill 0.3s linear 0s;
 }
 
 .sparks {
@@ -284,18 +297,17 @@
 }
 
 .is-liked .sparks {
-  animation: sparks 0.3s ease-in 0.3s 1;
+  animation: opacity-sparks 0.3s ease-in 0.3s 1;
 }
 
 .is-liked .heart {
   transform-origin: center;
-  animation: heart 0.3s ease-in 0.1s 1;
+  animation: transform-heart 0.3s ease-in 0.1s 1;
 }
 
 .save-button {
   inline-size: 335px;
   block-size: 55px;
-  display: flex;
   gap: 8px;
   margin-block-end: 100px;
 }
@@ -304,7 +316,6 @@
   background-color: var(--bg-color);
   padding: 27.8px;
   max-inline-size: 353px;
-  max-block-size: 191px;
 }
 
 .dialog-save-block {
@@ -326,6 +337,10 @@
   padding: 10px 130px;
 }
 
+.dialog-button-text {
+  text-transform: uppercase;
+}
+
 .dialog-block {
   display: flex;
   flex-direction: row;
@@ -335,11 +350,6 @@
 
 .dialog-save::backdrop {
   background-color: rgb(0, 0, 0, 0.75);
-}
-
-.dialog-icon {
-  width: 39px;
-  height: 39px;
 }
 
 @media (width <= 375px) {
