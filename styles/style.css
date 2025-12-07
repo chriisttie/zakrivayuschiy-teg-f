@@ -314,7 +314,7 @@
 
 .dialog-save {
   background-color: var(--bg-color);
-  padding: 27.8px;
+  padding: 27.6px;
   max-inline-size: 353px;
 }
 
@@ -366,7 +366,7 @@
 
   .dialog-save {
     max-inline-size: 341px;
-    padding: 28px 38px;
+    padding: 27.6px 38px;
   }
 
   .dialog-save-text {
