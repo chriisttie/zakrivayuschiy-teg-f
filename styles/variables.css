@@ -22,4 +22,6 @@
   --width-adaptive: clamp(20.833rem, 30.52vw + 14.5rem, 38.889rem);
   --bg-color: #fff;
   --bg-border-color: #000;
+  --accent-color: #000;
+  --default-color: #fff;
 }
