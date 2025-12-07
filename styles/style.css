@@ -71,6 +71,8 @@
 
 .card_image-block {
   position: relative;
+  border-top: 2px solid var(--bg-border-color);
+  border-bottom: 2px solid var(--bg-border-color);
 }
 
 .image-block_watermark {
